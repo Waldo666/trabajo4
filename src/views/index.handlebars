@@ -1,0 +1,21 @@
+<h1>Hola, estos son mis pokemons...LOS VENDO, MEN</h1>
+<h2>ME LA RE AGUANTO</h2>
+
+<div class="contenedorCards">
+  <p>Mi nombre es {{usuario.nombre}}</p>
+  <p>Mi apellido es {{usuario.apellido}}</p>
+</div>
+
+<div class="card">
+  {{#each productos}}
+    <p>{{this.title}}</p>
+    <p>{{this.description}}</p>
+    <p>{{this.price}}</p>
+  {{/each}}
+</div>
+{{#each productos}}
+  <p>{{this.title}}</p>
+  <p>{{this.description}}</p>
+  <p>{{this.price}}</p>
+  <script>console.log(this);</script>
+{{/each}}
